@@ -10,31 +10,36 @@
     android:layout_height="match_parent"
     android:background="#818181"
     android:padding="40dp"
+
     >
 
     <Button
         android:id="@+id/b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_margin="10dp"
         android:background="@color/black"
         android:textColor="@color/white"
-        android:text="Comenzar" />
+        android:text="Comenzar"
+        android:textSize="30dp"
+        />
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Introduce tu nombre"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#065A9C"
+        android:visibility="invisible"
+        android:hint="Introduce tu nombre: "
+        android:textSize="30dp"
         />
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:src="@mipmap/BatmanTarea"/>
 
 </LinearLayout>
